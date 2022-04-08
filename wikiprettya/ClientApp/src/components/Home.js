@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+import {Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
+
 export class Home extends Component {
   static displayName = Home.name;
 
   render () {
     return (
       <div>
-        <h1>Hello, world!This is Wiki-Pretty-a.  </h1>
-        <h6>wikipedia is pretty ugly. let's change that.</h6>
+        <h1>Hello, world!  </h1>
+        <h6></h6>
         <p>Welcome to your new single-page application, built with:</p>
         <ul>
           <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
@@ -21,7 +23,34 @@ export class Home extends Component {
           <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
         </ul>
         <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
+      
+        <div>
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5">
+                wikiprettya
+              </CardTitle>
+              <CardSubtitle
+                className="mb-2 text-muted"
+                tag="h6"
+              >
+                wikipedia is pretty ugly. let's change that.
+              </CardSubtitle>
+              <CardText>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </CardText>
+              <Button>
+                Button
+              </Button>
+            </CardBody>
+          </Card>
+        </div>
+      
+      
       </div>
+
+
+
     );
   }
 }
