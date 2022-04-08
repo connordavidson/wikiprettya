@@ -6,7 +6,8 @@ export class Home extends Component {
   render () {
     return (
       <div>
-        <h1>Hello, world!</h1>
+        <h1>Hello, world!This is Wiki-Pretty-a.  </h1>
+        <h6>wikipedia is pretty ugly. let's change that.</h6>
         <p>Welcome to your new single-page application, built with:</p>
         <ul>
           <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
