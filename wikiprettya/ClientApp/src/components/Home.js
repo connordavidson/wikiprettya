@@ -8,7 +8,7 @@ export class Home extends Component {
   render () {
     return (
       <div>
-        <h1>Hello, world!  </h1>
+        <h1>Hello, world!  cd test 123 </h1>
         <h6></h6>
         <p>Welcome to your new single-page application, built with:</p>
         <ul>
