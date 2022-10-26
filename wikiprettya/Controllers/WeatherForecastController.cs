@@ -22,7 +22,7 @@ public class WeatherForecastController : ControllerBase
     public WeatherForecastController(ILogger<WeatherForecastController> logger, dbContext context)
     {
         _logger = logger;
-        _context = context ; 
+        _context = context ;  
     }
 
     [HttpGet]
