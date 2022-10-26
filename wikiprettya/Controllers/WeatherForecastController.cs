@@ -1,4 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using wikiprettya.Models;
+using System.Collections.Generic ; 
+using Microsoft.EntityFrameworkCore ;
+// using wikiprettya.Data ; 
+// using System.Data.Entity;
 
 namespace wikiprettya.Controllers;
 
@@ -12,14 +17,16 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly dbContext _context; 
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, dbContext context)
     {
         _logger = logger;
+        _context = context ; 
     }
 
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public  IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
