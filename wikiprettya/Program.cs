@@ -1,6 +1,14 @@
+using wikiprettya.Services; 
+using wikiprettya.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddTransient<IPageService, PageService>();
+
+builder.Services.AddTransient<dbContext>();
 
 builder.Services.AddControllersWithViews();
 
