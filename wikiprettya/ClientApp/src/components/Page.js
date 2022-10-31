@@ -16,7 +16,7 @@ export class Page extends Component {
 
 
     render(){ 
-        document.title = 'Raleigh, North Carolina' + '- Wikiprettya';
+        document.title = 'Raleigh, North Carolina' + ' - Wikiprettya';
         return( 
             <Container>
                 <Row>
