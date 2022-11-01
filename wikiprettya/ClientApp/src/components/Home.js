@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import {
   Card, 
-  CardBody, 
   CardTitle, 
   CardSubtitle, 
+  CardBody, 
   CardText, 
   Button ,
   Container, 
@@ -13,6 +13,7 @@ import {
 
   
 } from 'reactstrap';
+import {HomeCard} from './HomeCard';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -32,144 +33,29 @@ export class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Raleigh, North Carolina" subtitle="The Capital" link_text="page" link_url="/page" /> 
             </Col>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Charlotte, North Carolina" subtitle="The largest city" link_text="page" link_url="/page" /> 
             </Col>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Wilmington, North Carolina" subtitle="The coastal city" link_text="page" link_url="/page" /> 
             </Col>
           </Row>
           <Row>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Asheville, North Carolina" subtitle="The mountain city" link_text="page" link_url="/page" /> 
             </Col>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Greenville, North Carolina" subtitle="The pirate city" link_text="page" link_url="/page" /> 
             </Col>
             <Col>
-              <Card style={{marginBottom: 25 }}>
-                <CardBody>
-                  <CardTitle tag="h5">
-                    Raleigh, North Carolina
-                  </CardTitle>
-                  <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                  >
-                    El Capital
-                  </CardSubtitle>
-                  <CardText>
-                    <a href="/page">Page</a>
-                  </CardText>
-                </CardBody>
-              </Card>
+              <HomeCard title="Greensboro, North Carolina" subtitle="The piedmont city" link_text="page" link_url="/page" /> 
             </Col>
           </Row>
-        </Container>
-
-        {/* <div>
-          <Card>
-            <CardBody>
-              <CardTitle tag="h5">
-                wikiprettya
-              </CardTitle>
-              <CardSubtitle
-                className="mb-2 text-muted"
-                tag="h6"
-              >
-                wikipedia is pretty ugly. let's change that.
-              </CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </CardText>
-              <Button>
-                Button
-              </Button>
-            </CardBody>
-          </Card>
-        </div> */}
-      
+        </Container>    
       
       </div>
-
-
 
     );
   }
